@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Emmanuel Jerome</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">EJ<span class="logo-dot">.</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section work-section" style="padding-top: 140px;">
+            <div class="section-container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Recent Work</span>
+                    <h2 class="section-title">Selected <span class="text-gradient">projects</span></h2>
+                    <p class="section-subtitle">A showcase of digital experiences where creativity meets functionality.</p>
+                </div>
+
+                <div class="work-grid">
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%236C5CE7' font-size='40' font-family='Inter'%3ELuxury Store%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">E-Commerce</span>
+                            <h4>Opulent Fashion</h4>
+                            <p>Premium online boutique with immersive product showcases, custom animations, and a seamless checkout flow that increased conversions by 35%.</p>
+                        </div>
+                    </div>
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%23D4A853' font-size='40' font-family='Inter'%3EDashboard%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">SaaS</span>
+                            <h4>MetricFlow Analytics</h4>
+                            <p>Real‑time data dashboard with dynamic charts, filters, and an intuitive interface that simplified complex financial data for non‑technical users.</p>
+                        </div>
+                    </div>
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%2300CEC9' font-size='40' font-family='Inter'%3EFinTech%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Fintech</span>
+                            <h4>NexaBank App</h4>
+                            <p>Mobile‑first banking platform with a focus on security, speed, and user delight — achieved a 4.8‑star app store rating.</p>
+                        </div>
+                    </div>
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%23A29BFE' font-size='40' font-family='Inter'%3EHealth%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Healthcare</span>
+                            <h4>VitalCheck Telehealth</h4>
+                            <p>End‑to‑end patient portal with appointment scheduling, video consultation integration, and an accessible, calming interface.</p>
+                        </div>
+                    </div>
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%23FF6B6B' font-size='40' font-family='Inter'%3EEdTech%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Education</span>
+                            <h4>LearnLoop LMS</h4>
+                            <p>Feature‑rich e‑learning platform with interactive quizzes, progress tracking, and a vibrant, student‑friendly interface.</p>
+                        </div>
+                    </div>
+                    <div class="work-card" data-reveal>
+                        <div class="work-image">
+                            <img src="images/Banner-photo.png"  width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23161622' width='600' height='400'/%3E%3Ctext x='300' y='220' text-anchor='middle' fill='%23D4A853' font-size='40' font-family='Inter'%3EPortfolio%3C/text%3E%3C/svg%3E" alt="Project">
+                            <div class="work-overlay"><span>View Case Study</span></div>
+                        </div>
+                        <div class="work-details">
+                            <span class="work-category">Portfolio</span>
+                            <h4>Creative Director's Hub</h4>
+                            <p>A bespoke portfolio for a renowned designer, featuring stunning galleries and subtle micro‑interactions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="section-header" data-reveal style="margin-top:80px;">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What <span class="text-gradient">clients</span> say</h2>
+                </div>
+                <div class="testimonial-grid" data-reveal style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:24px;">
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px;">
+                        <p style="color:var(--text-secondary); font-style:italic; margin-bottom:15px;">“Emmanuel exceeded all expectations. Our conversion rate doubled after the redesign. His attention to detail is unmatched.”</p>
+                        <strong style="color:var(--accent-gold);">— Sarah M., CEO of Opulent Fashion</strong>
+                    </div>
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px;">
+                        <p style="color:var(--text-secondary); font-style:italic; margin-bottom:15px;">“Working with Emmanuel was a breeze. He delivered ahead of schedule and the dashboard is now the backbone of our analytics.”</p>
+                        <strong style="color:var(--accent-gold);">— David T., CTO MetricFlow</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="currentYear">2024</span> Emmanuel Jerome. All rights reserved. <span class="footer-cta">Design with purpose.</span></p>
+        </div>
+    </footer>
+</body>
+</html>

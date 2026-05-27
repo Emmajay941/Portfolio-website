@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jerome | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <svg viewBox="0 0 100 100" width="80" height="80">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="3" stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#6C5CE7" />
+                        <stop offset="100%" stop-color="#D4A853" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>EJ</span>
+        </div>
+    </div>
+
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">EJ<span class="logo-dot">.</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge" data-reveal>
+                        <span class="badge-pulse"></span>
+                        Available for projects
+                    </div>
+                    <h1 class="hero-title" data-reveal>
+                        Emmanuel <span class="text-gradient">Jerome</span>
+                    </h1>
+                    <div class="hero-role-wrapper" data-reveal>
+                        <span class="hero-role">Frontend Developer</span>
+                        <span class="hero-role-sub">I craft visually stunning digital experiences</span>
+                    </div>
+                    <p class="hero-description" data-reveal>
+                        I transform complex ideas into fluid, pixel-perfect interfaces that tell your brand's story and drive results. Every line of code is a brushstroke of art.
+                    </p>
+                    <div class="hero-actions" data-reveal>
+                        <a href="work.html" class="btn btn-primary magnetic">Explore Work</a>
+                        <a href="contact.html" class="btn btn-outline magnetic">Get In Touch</a>
+                    </div>
+                    <div class="hero-stats" data-reveal>
+                        <div class="stat">
+                            <span class="stat-number counter" data-target="4">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number counter" data-target="2">0</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-reveal>
+                    <div class="hero-image-card" id="heroCard">
+                        <div class="card-border-gradient"></div>
+                        <div class="card-image">
+                            <img src="/images/Banner-photo.png" width='400' height='400' viewBox='0 0 400 400'%3E%3Crect fill='%23161622' width='400' height='400'/%3E%3Ctext x='200' y='220' text-anchor='middle' fill='%236C5CE7' font-size='130' font-weight='700' font-family='Inter, sans-serif'%3EEJ%3C/text%3E%3C/svg%3E" alt="Emmanuel Jerome">
+                        </div>
+                        <div class="card-shine"></div>
+                    </div>
+                    <div class="floating-badge" id="floatingBadge">
+                        <span>⭐ 5.0 Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Brand Story / About Section -->
+        <section class="section about-section" style="padding-top:80px; padding-bottom:80px;">
+            <div class="section-container" style="max-width:1000px; text-align:center;">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">The <span class="text-gradient">philosophy</span> behind the code</h2>
+                </div>
+                <p class="about-text" data-reveal style="color: var(--text-secondary); font-size:1.1rem; line-height:1.9; max-width:800px; margin:0 auto 30px;">
+                    I believe that exceptional frontend development goes beyond just writing clean code. It's about understanding the user's journey, the brand's voice, and the emotions that a pixel‑perfect interface can evoke. Over the past five years, I've partnered with startups, agencies, and global brands to create digital products that not only look stunning but also perform flawlessly. Every project is a collaboration — I listen, I research, and I deliver solutions that exceed expectations.
+                </p>
+                <div class="philosophy-grid" data-reveal style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:24px; text-align:left; margin-top:40px;">
+                    <div class="phil-card" style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px;">
+                        <h4 style="color:var(--accent-purple); margin-bottom:8px;">🎯 User‑Centric</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">I design and build with the end‑user in mind, ensuring intuitive navigation and accessibility.</p>
+                    </div>
+                    <div class="phil-card" style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px;">
+                        <h4 style="color:var(--accent-gold); margin-bottom:8px;">⚡ Performance Obsessed</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">Every kilobyte matters. I optimize assets and code for lightning‑fast load times.</p>
+                    </div>
+                    <div class="phil-card" style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px;">
+                        <h4 style="color:var(--accent-teal); margin-bottom:8px;">✨ Pixel‑Perfect</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">I scrutinize every spacing, alignment, and transition to achieve flawless visual consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By / Client Logos (symbolic) -->
+        <section class="section trust-section" style="padding-top:0; padding-bottom:80px;">
+            <div class="section-container" style="text-align:center;">
+                <p class="section-subtitle" data-reveal style="margin-bottom:30px;">Trusted by innovative companies worldwide</p>
+                <div class="logo-strip" data-reveal style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; align-items:center; opacity:0.6;">
+                    <span style="font-weight:700; font-size:1.5rem; letter-spacing:1px; color:var(--text-secondary);">FinEdge</span>
+                    <span style="font-weight:700; font-size:1.5rem; letter-spacing:1px; color:var(--text-secondary);">LuxeStyle</span>
+                    <span style="font-weight:700; font-size:1.5rem; letter-spacing:1px; color:var(--text-secondary);">FlowAnalytics</span>
+                    <span style="font-weight:700; font-size:1.5rem; letter-spacing:1px; color:var(--text-secondary);">NextGen Health</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="currentYear">2024</span> Emmanuel Jerome. All rights reserved. <span class="footer-cta">Design with purpose.</span></p>
+        </div>
+    </footer>
+</body>
+</html>

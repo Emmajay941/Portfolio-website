@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Emmanuel Jerome</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">EJ<span class="logo-dot">.</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section services-section" style="padding-top: 140px;">
+            <div class="section-container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">What I Do</span>
+                    <h2 class="section-title">Services crafted for <span class="text-gradient">impact</span></h2>
+                    <p class="section-subtitle">I deliver end‑to‑end frontend solutions tailored to elevate your brand and engage your audience.</p>
+                </div>
+
+                <!-- Extended Services Grid (6 services) -->
+                <div class="services-grid" style="margin-bottom:80px;">
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                        <h3>Web Development</h3>
+                        <p>Responsive, performant websites and web apps built with modern frameworks (React, Next.js, Vue) and a focus on clean, maintainable code.</p>
+                    </div>
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Intuitive interfaces backed by user research, wireframing, and high‑fidelity prototyping that convert visitors into loyal customers.</p>
+                    </div>
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                        <h3>Performance Optimization</h3>
+                        <p>Lightning‑fast load times and smooth interactions through code splitting, lazy loading, image optimization, and CDN strategies.</p>
+                    </div>
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+                        <h3>Maintenance & Support</h3>
+                        <p>Ongoing updates, security patches, and feature enhancements to keep your digital assets thriving 24/7.</p>
+                    </div>
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+                        <h3>Landing Page Design</h3>
+                        <p>High‑converting, beautifully crafted landing pages that tell your story and drive action — perfect for product launches.</p>
+                    </div>
+                    <div class="service-card" data-reveal>
+                        <div class="service-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M2 8h20"/><path d="M6 4v4"/></svg></div>
+                        <h3>Custom Dashboards</h3>
+                        <p>Interactive admin panels and data visualization tools tailored to your business needs, built with real‑time capabilities.</p>
+                    </div>
+                </div>
+
+                <!-- How I Work Process -->
+                <div class="section-header" data-reveal style="margin-top:40px;">
+                    <span class="section-tag">Process</span>
+                    <h2 class="section-title">How I <span class="text-gradient">work</span></h2>
+                </div>
+                <div class="process-grid" data-reveal style="display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:24px;">
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px; text-align:center;">
+                        <div style="font-size:2rem; margin-bottom:10px;">📋</div>
+                        <h4 style="font-weight:700;">Discovery</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">We discuss your goals, audience, and requirements to define the project scope.</p>
+                    </div>
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px; text-align:center;">
+                        <div style="font-size:2rem; margin-bottom:10px;">🎨</div>
+                        <h4 style="font-weight:700;">Design</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">I create wireframes and high‑fidelity mockups, iterating based on your feedback.</p>
+                    </div>
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px; text-align:center;">
+                        <div style="font-size:2rem; margin-bottom:10px;">💻</div>
+                        <h4 style="font-weight:700;">Develop</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">Clean, responsive code is written with performance and accessibility at the core.</p>
+                    </div>
+                    <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px; text-align:center;">
+                        <div style="font-size:2rem; margin-bottom:10px;">🚀</div>
+                        <h4 style="font-weight:700;">Launch & Grow</h4>
+                        <p style="color:var(--text-secondary); font-size:0.9rem;">After rigorous testing, we deploy and I provide ongoing support for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="currentYear">2024</span> Emmanuel Jerome. All rights reserved. <span class="footer-cta">Design with purpose.</span></p>
+        </div>
+    </footer>
+</body>
+</html>
